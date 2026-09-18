@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>StoreStore</title>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      margin: 0;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      color: #aaa;
+      margin-bottom: 35px;
+    }
+
+    .product {
+      background: #1d1d1d;
+      border-radius: 18px;
+      padding: 22px;
+      margin: 18px auto;
+      max-width: 420px;
+      text-align: left;
+    }
+
+    .product h2 {
+      margin-top: 0;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      border: 0;
+      border-radius: 12px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>StoreStore</h1>
+  <div class="subtitle">Digital goods • instant access</div>
+
+  <div class="product">
+    <h2>Digital Product #1</h2>
+    <p>Your first digital product will go here.</p>
+    <button>Coming Soon ⭐</button>
+  </div>
+
+  <div class="product">
+    <h2>Digital Product #2</h2>
+    <p>We're building something good.</p>
+    <button>Coming Soon ⭐</button>
+  </div>
+
+  <script>
+    const tg = window.Telegram.WebApp;
+    tg.ready();
+    tg.expand();
+  </script>
+
+</body>
+</html>
